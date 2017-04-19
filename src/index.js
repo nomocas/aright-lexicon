@@ -4,7 +4,7 @@
  * @copyright 2016-2017 Gilles Coomans
  */
 
-const babelute = require('babelute');
+import babelute from 'babelute';
 
 const arightLexicon = babelute.createLexicon('aright');
 
@@ -48,7 +48,8 @@ arightLexicon
 		const methods = {};
 		['object', 'string', 'function', 'boolean', 'number', 'boolean']
 		.forEach((type) => {
-			methods['is ${ type[0].toUpperCase() + type.substring(1) }'] = function() {
+			const upperName = type[0].toUpperCase() + type.substring(1);
+			methods[`is${ upperName }`] = function() {
 				return this.is(type);
 			};
 			methods[type] = function(name, babelute) {
