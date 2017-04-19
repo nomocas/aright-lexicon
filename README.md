@@ -20,6 +20,8 @@ Think about it as a Super JSON-Schema DSL.
 - Could be translated/transformed to many output kinds (html, assertions, function signature with meta-programming, ...)
 
 
+Under heavy work. Doc or not up to date.
+
 ## Usage
 ```
 > npm i babelute aright-lexicon
