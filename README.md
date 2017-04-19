@@ -20,17 +20,28 @@ Think about it as a Super JSON-Schema DSL.
 - Could be translated/transformed to many output kinds (html, assertions, function signature with meta-programming, ...)
 
 
-Under heavy work. Doc are not up-to-date. Only dev branch for the moment.
+Under __heavy work. Doc are not up-to-date__.
 
 ## Usage
+
+As by default, this DSL is aimed to perfom validation, let's see example and API with the associated pragmatics ([aright-validation](https://github.com/nomocas/aright-validation))
+
 ```
-> npm i babelute aright-lexicon
+> npm i babelute aright-lexicon aright-validation
+```
+or better :
+
+```
+> yarn add babelute aright-lexicon aright-validation
 ```
 
 ## Examples
 
 ```javascript
-const v = aright.v;
+import arightLexicon from 'aright-lexicon';
+import 'aright-validation'; // add a .$validate(value) to lexicon api
+
+const v = arightLexicon.initializer();
 
 const rule = v
 	.isObject()
