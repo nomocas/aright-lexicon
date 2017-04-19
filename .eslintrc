@@ -33,6 +33,8 @@
         "one-var": [ 0, "never" ],
         "no-this-before-super": 2,
         "quote-props": [ 2, "as-needed" ],
-        "no-var":2
+        "no-var":2,
+        "no-useless-concat": "error",
+        "prefer-template": "error"
     }
 }

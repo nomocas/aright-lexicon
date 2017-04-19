@@ -1,7 +1,7 @@
 {
-  "name": "es6-rb-mc-k-i-boilerplate",
+  "name": "aright-lexicon",
   "version": "0.1.0",
-  "description": "Full ES6 module boilerplate with rollup/babel and mocha/chai/karma/istanbul",
+  "description": "babelute DSL for Object and Types validations",
   "main": "dist/bundles/index.js",
   "module": "dist/bundles/index.mjs",
   "jsnext:main": "dist/bundles/index.mjs",
@@ -28,10 +28,12 @@
     "instrument": false
   },
   "keywords": [
-    "es6",
-    "boilerplate",
-    "test",
-    "coverage"
+    "DSL",
+    "validation",
+    "schema",
+    "validation",
+    "types",
+    "babelute"
   ],
   "author": "Gilles Coomans",
   "license": "MIT",

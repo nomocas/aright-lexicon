@@ -1,7 +1,7 @@
 /**
  * @author Gilles Coomans
  * @licence MIT
- * @copyright 2016 Gilles Coomans
+ * @copyright 2016-2017 Gilles Coomans
  */
 
 const babelute = require('babelute');
@@ -15,7 +15,6 @@ arightLexicon
 		'strict',
 		'not',
 		'switch',
-		'required',
 		'minLength',
 		'maxLength',
 		'minimum',
@@ -25,7 +24,6 @@ arightLexicon
 		'item',
 		'equal',
 		'instanceOf',
-		'type',
 		'array',
 		'isArray',
 		'null'
@@ -38,12 +36,8 @@ arightLexicon
 			isNull() {
 				return this.equal(null);
 			},
-			or() {
-				return this._append('aright', 'or', [].slice.call(arguments));
-			},
-			required(yes) {
-				this._aright_required = !!yes;
-				return this;
+			or(...rules) {
+				return this._append('aright', 'or', rules);
 			},
 			email() {
 				return this.isString().format('email').minLength(6);
@@ -52,7 +46,7 @@ arightLexicon
 	})
 	.addCompounds(() => {
 		const methods = {};
-		['object', 'string', 'func', 'bool', 'number', 'boolean']
+		['object', 'string', 'function', 'boolean', 'number', 'boolean']
 		.forEach((type) => {
 			methods['is' + type[0].toUpperCase() + type.substring(1)] = function() {
 				return this.is(type);
