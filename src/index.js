@@ -48,7 +48,7 @@ arightLexicon
 		const methods = {};
 		['object', 'string', 'function', 'boolean', 'number', 'boolean']
 		.forEach((type) => {
-			methods['is' + type[0].toUpperCase() + type.substring(1)] = function() {
+			methods['is ${ type[0].toUpperCase() + type.substring(1) }'] = function() {
 				return this.is(type);
 			};
 			methods[type] = function(name, babelute) {
