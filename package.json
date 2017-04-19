@@ -1,6 +1,6 @@
 {
   "name": "aright-lexicon",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "babelute DSL for Object and Types validations",
   "main": "dist/bundles/index.js",
   "module": "dist/bundles/index.mjs",
