@@ -5,8 +5,8 @@
 [![npm](https://img.shields.io/npm/v/aright-lexicon.svg)](https://www.npmjs.com/package/aright-lexicon)
 [![npm-downloads](https://img.shields.io/npm/dm/aright-lexicon.svg)](https://npm-stat.com/charts.html?package=aright-lexicon)
 [![licence](https://img.shields.io/npm/l/aright-lexicon.svg)](https://spdx.org/licenses/MIT)
-[![dependecies](https://david-dm.org/nomocas/aright-lexicon.svg)](https://david-dm.org/)
-[![dev-dependencies](https://img.shields.io/david/dev/nomocas/aright-lexicon.svg)](https://david-dm.org/)
+[![bitHound Dependencies](https://www.bithound.io/github/nomocas/aright-lexicon/badges/dependencies.svg)](https://www.bithound.io/github/nomocas/aright-lexicon/dev/dependencies/npm)
+[![bitHound Dev Dependencies](https://www.bithound.io/github/nomocas/aright-lexicon/badges/devDependencies.svg)](https://www.bithound.io/github/nomocas/aright-lexicon/dev/dependencies/npm)
 [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)](https://conventionalcommits.org)
 
 ([babelute](https://github.com/nomocas/babelute)) DSL for describing validation rules with expressive compact chained API.
